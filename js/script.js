@@ -1,4 +1,4 @@
-//메뉴//
+/*//메뉴//
 $('.gnb li').mouseover(function(){
     $('.gnb li').removeClass('on');
     $(this).addClass('on');
@@ -197,3 +197,4 @@ $('.cont-arrow-R').click(function(){
 $('.cont-arrow-L').click(function(){
     slideL();
 });
+*/

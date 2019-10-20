@@ -5,13 +5,14 @@
 	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="hyunj">
-    <meta name="description" content="다양한 식물을 파는 식물전용 온라인몰입니다.">
-    <meta name="keywords" content="식물, 나무, 화분, 쇼핑몰, 원예, 가드닝">
-    <title>Green House</title>
+    <meta name="description" content="잠깐의 여유와 달콤한 행복, 던킨도너츠 홈페이지입니다.">
+    <meta name="keywords" content="던킨도너츠, 도넛, donuts, coffee, sandwiches, beverage">
+    <title>DUNKIN' DONUTS</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="images/icons/favicon.ico">
@@ -21,20 +22,27 @@
     <link rel="apple-touch-icon-precomposed" sizes="192x192" href="images/icons/favicon_192.png">
 
     <!--구글폰트-->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Great+Vibes|Nunito:700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700&display=swap" rel="stylesheet">
+    <!--
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Concert One', cursive;
+    font-family: 'Hind', sans-serif;
+    -->
 
     <!-- 페이스북 메타 태그 -->
-    <meta property="og:title" content="Green House">
-    <meta property="og:url" content="https://hyunj37.github.io/greenhouse_pc/">
-    <meta property="og:image" content="https://hyunj37.github.io/images/website1.jpg">
-    <meta property="og:description" content="greenhouse portfolio">
+    <meta property="og:title" content="DunkinDonuts">
+    <meta property="og:url" content="https://hyunj37.github.io/Dunkin_cover/">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="DunkinDonuts portfolio">
    
     <!-- 트위터 메타 태그 -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Green House">
-    <meta name="twitter:url" content="https://hyunj37.github.io/greenhouse_pc/">
-    <meta name="twitter:image" content="https://hyunj37.github.io/images/website1.jpg">
-    <meta name="twitter:description" content="greenhouse portfolio">
+    <meta name="twitter:title" content="DunkinDonuts">
+    <meta name="twitter:url" content="https://hyunj37.github.io/Dunkin_cover/">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:description" content="DunkinDonuts portfolio">
 
     <!-- HTLM5shiv ie6~8 -->
     <!--[if lt IE 9]> 
@@ -54,612 +62,706 @@
     <!-- /스킵 네비게이션 -->
     <div class="wrapper">
         <header id="header">
-            <div class="top-head">
+            <div class="top-area">
                 <div class="container">
-                    <ul class="top-menu">
-                        <li><a href="#">로그인</a></li>
-                        <li><a href="#">회원가입</a></li>
-                        <li><a href="#">고객센터</a></li>
-                        <li><a href="#">장바구니</a></li>
-                    </ul>
-                </div>
-                <!-- /container -->
-            </div>
-            <!-- /top-head -->
-            <div class="main-head">
-                <div class="container clearfix">
-                    <h1><a href="#">GREEN HOUSE</a></h1>
-                    <ul class="gnb">
-                        <li><a href="#">전체상품</a></li>
-                        <li><a href="#">원예용품</a></li>
-                        <li><a href="#">이벤트</a></li>
-                        <li><a href="#">인테리어</a></li>
-                    </ul>
-                    <div class="search-form">
-                        <input type="search" name="검색">
-                        <button type="submit" class="search-btn">찾기</button>
+                    <div class="monthly-dunkin">
+                        <button type="button">MONTHLY-DUNKIN</button>
                     </div>
-                </div>
-                <!-- /container -->
-                <div class="gnb-sub">
-                    <div class="container">
-                        <ul class="gnb-sub-inner clearfix">
-                            <li class="gnb-sub1">
-                                <ul>
-                                    <li><a href="#">관엽식물</a></li>
-                                    <li><a href="#">다육이/선인장</a></li>
-                                    <li><a href="#">대형화분</a></li>
-                                </ul>
-                            </li>
-                            <li class="gnb-sub2">
-                                <ul>
-                                    <li><a href="#">화분</a></li>
-                                    <li><a href="#">흙</a></li>
-                                    <li><a href="#">도구</a></li>
-                                </ul>
-                            </li>
+                    <!-- /monthly-dunkin -->
+                    <div class="sns-menu">
+                        <ul>
+                            <li><a href="#">FACEBOOK</a></li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">INSTAGRAM</a></li>
+                            <li><a href="#">TWITTER</a></li>
+                            <li><a href="#">YOUTUBE</a></li>
                         </ul>
                     </div>
-                    <!-- /container -->
+                    <!-- /sns-menu -->
+                    <h1 class="logo"><a class="txt-hidden" href="index.html">DUNKIN'</a></h1>
+                    <div class="top-link">
+                        <ul>
+                            <li><a href="#"><strong>창업문의</strong></a></li>
+                            <li><a href="#">영양정보</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li class="search"><a href="#">SEARCH</a></li>
+                        </ul>
+                    </div>
+                    <!-- /top-link -->
                 </div>
-                <!-- /gnb-sub -->
+                <!-- /container -->
             </div>
-            <!-- /main-head -->
+            <!-- /top-area -->
+            <div class="gnb-menu clearfix">
+                <div class="container">
+                    <div class="left-menu">
+                        <ul>
+                            <li><a href="#">LOGIN</a></li>
+                            <li><a href="#">JOIN</a></li>
+                        </ul>
+                    </div>
+                    <!-- /left-menu -->
+                    <nav class="main-menu">
+                        <ul>
+                            <!-- ONLINE STORE -->
+                            <li class="menu1">
+                                <a class="menu-title" href="#">ONLINE STORE</a>
+                                <div class="sub-menu">
+                                    <div class="container clearfix">
+                                        <div class="gnb-banner floatL">
+                                            <a href="#">
+                                                <p class="btitle">해피오더 서비스</p>
+                                                <p class="btxt">해피앱에서 간편하게,<br/>
+                                            예약&amp;픽업 배달까지!</p>
+                                                <span class="bmore"><span>more</span></span>
+                                            </a>
+                                            <a href="#">
+                                                <p class="btitle">해피 E-마켓</p>
+                                                <p class="btxt">해피앱, G마켓부터 카카오 선물<br/>
+                                                하기까지! 던킨으로 선물하세요!</p>
+                                                <span class="bmore"><span>more</span></span>
+                                            </a>
+                                        </div>
+                                        <!-- /banner -->
+                                    </div>
+                                    <!-- /container -->
+                                </div>
+                                <!-- /sub-menu -->
+                            </li>
+                            <!-- menu2 -->
+                            <!-- MENU -->
+                            <li class="menu2">
+                                <a class="menu-title" href="#">MENU</a>
+                                <div class="sub-menu">
+                                    <div class="container clearfix">
+                                        <ul class="list-menu">
+                                            <li class="group">
+                                                <dl>
+                                                    <dt><a href="#">DONUTS</a></dt>
+                                                    <dd><a href="#">이달의 도넛(DOM)</a></dd>
+                                                    <dd><a href="#">베이직</a></dd>
+                                                    <dd><a href="#">베이글</a></dd>
+                                                    <dd><a href="#">기타</a></dd>
+                                                </dl>
+                                            </li>
+                                            <li class="group">
+                                                <dl>
+                                                    <dt><a href="#">SANDWICHES</a></dt>
+                                                    <dd><a href="#">핫 샌드위치</a></dd>
+                                                    <dd><a href="#">DD 앳홈</a></dd>
+                                                </dl>
+                                            </li>
+                                            <li class="group">
+                                                <dl>
+                                                    <dt><a href="#">COFFEE</a></dt>
+                                                    <dd><a href="#">던킨 에스프레소</a></dd>
+                                                    <dd><a href="#">브류드커피</a></dd>
+                                                    <dd><a href="#">롱비치블루</a></dd>
+                                                </dl>
+                                            </li>
+                                            <li class="group">
+                                                <dl>
+                                                    <dt><a href="#">BEVERAGE</a></dt>
+                                                    <dd><a href="#">쿨라타/스무디</a></dd>
+                                                    <dd><a href="#">크러쉬/던카치노</a></dd>
+                                                    <dd><a href="#">에이드/아이스티</a></dd>
+                                                    <dd><a href="#">초코/티/티라떼</a></dd>
+                                                </dl>
+                                            </li>
+                                            <li class="group">
+                                                <dl>
+                                                    <dt><a href="#">OTHERS</a></dt>
+                                                    <dd><a href="#">빙수</a></dd>
+                                                    <dd><a href="#">아이스 디저트</a></dd>
+                                                    <dd><a href="#">커피상품</a></dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <!-- /list-menu -->
+                                        <div class="gnb-banner">
+                                            <a href="#">
+                                                <p class="btitle">10월, 이달의 도넛</p>
+                                                <strong>서울우유 딸기 바이츠</strong>
+                                                <p class="btxt">서울우유 베스트 플레이버인<br/>
+                                                딸기 우유 맛을 글레이징한<br/>
+                                                이달의 도넛을 만나보세요</p>
+                                                <span class="bmore"><span>more</span></span>
+                                            </a>
+                                        </div>
+                                        <!-- /banner -->
+                                    </div>
+                                    <!-- /container -->
+                                </div>
+                                <!-- /sub-menu -->
+                            </li>
+                            <!-- /menu2 -->
+                            <!-- EVENT -->
+                            <li class="menu3">
+                                <a class="menu-title" href="#">EVENT</a>
+                                <div class="sub-menu">
+                                    <div class="container clearfix">
+                                        <ul class="list-menu">
+                                            <li class="group">
+                                                <dl>
+                                                    <dt><a href="#">진행중인 이벤트</a></dt>
+                                                </dl>
+                                            </li>
+                                            <li class="group">
+                                                <dl>
+                                                    <dt><a href="#">당첨자 발표</a></dt>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <!-- /list-menu -->
+                                        <div class="gnb-banner">
+                                            <a href="#">
+                                                <p class="btitle">KT 멤버십 VIP 초이스</p>
+                                                <p class="btxt">KT 멤버십 VIP 초이스<br/>
+                                                글레이즈드+아메리카노 FREE</p>
+                                                <span class="bmore"><span>more</span></span>
+                                            </a>
+                                        </div>
+                                        <!-- /banner -->
+                                    </div>
+                                    <!-- /container -->
+                                </div>
+                                <!-- /sub-menu -->
+                            </li>
+                            <!-- /menu3 -->
+                            <!-- STORE -->
+                            <li class="menu4">
+                                <a class="menu-title" href="#">STORE</a>
+                                <div class="sub-menu">
+                                    <div class="container clearfix">
+                                        <ul class="list-menu">
+                                            <li class="group">
+                                                <dl>
+                                                    <dt><a href="#">오프라인 STORE</a></dt>
+                                                    <dd><a href="#">매장찾기</a></dd>
+                                                    <dd><a href="#">신규 매장 안내</a></dd>
+                                                    <dd><a href="#">품질경영우수가맹점</a></dd>
+                                                </dl>
+                                            </li>
+                                            <li class="group">
+                                                <dl>
+                                                    <dt><a href="#">가맹점 개설 안내</a></dt>
+                                                    <dd><a href="#">던킨도너츠의 브랜드파워</a></dd>
+                                                    <dd><a href="#">왜? 던킨도너츠인가?</a></dd>
+                                                    <dd><a href="#">개설조건 및 절차</a></dd>
+                                                    <dd><a href="#">개설 상담 안내</a></dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <!-- /list-menu -->
+                                        <div class="gnb-banner">
+                                            <a href="#">
+                                                <p class="btitle">던킨 매장 찾기</p>
+                                                <p class="btxt">나와 가장 가까운 던킨을 찾아보세요</p>
+                                                <span class="bmore2"><span>more</span></span>
+                                            </a>
+                                            <a href="#">
+                                                <p class="btitle">단체주문 &amp; 케이터링 서비스</p>
+                                                <p class="btxt">언제, 어디서나 모두 함께 던킨을 즐기세요!</p>
+                                                <span class="bmore2"><span>more</span></span>
+                                            </a>
+                                        </div>
+                                        <!-- /banner -->
+                                    </div>
+                                    <!-- /container -->
+                                </div>
+                                <!-- /sub-menu -->
+                            </li>
+                            <!-- /menu4 -->
+                            <!-- BRAND -->
+                            <li class="menu5">
+                                <a class="menu-title" href="#">BRAND</a>
+                                <div class="sub-menu">
+                                    <div class="container">
+                                        <ul class="list-menu">
+                                            <li class="group">
+                                                <dl>
+                                                    <dt><a href="#">브랜드 소개</a></dt>
+                                                    <dd><a href="#">던킨도너츠에<br/>대해서 알아보세요</a></dd>
+                                                </dl>
+                                            </li>
+                                            <li class="group">
+                                                <dl>
+                                                    <dt><a href="#">브랜드 소식</a></dt>
+                                                    <dd><a href="#">던킨 소식을<br/>알려드립니다</a></dd>
+                                                </dl>
+                                            </li>
+                                            <li class="group">
+                                                <dl>
+                                                    <dt><a href="#">미디어 센터</a></dt>
+                                                    <dd><a href="#">던킨의 보도자료들을<br/>확인하세요</a></dd>
+                                                </dl>
+                                            </li>
+                                            <li class="group">
+                                                <dl>
+                                                    <dt><a href="#">CF</a></dt>
+                                                    <dd><a href="#">던킨도너츠CF</a></dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                        <!-- /list-menu -->
+                                    </div>
+                                    <!-- /container -->
+                                </div>
+                                <!-- /sub-menu -->
+                            </li>
+                            <!-- /menu5 -->
+                        </ul>
+                    </nav>
+                    <!-- /main-menu -->
+                </div>
+                <!-- /container -->
+            </div>
+            <!-- gnb-menu -->
         </header>
         <div id="contents">
             <h2 class="hidden">본문 콘텐츠 영역</h2>
-            <div class="cont-banner">
+            <section class="banner">
+                <div class="inner-banner swiper-container">
+                    <ul class="swiper-wrapper">
+                        <li class="slide1 swiper-slide"><a href="#" class="txt-hidden">slide1</a></li>
+                        <li class="slide2 swiper-slide"><a href="#" class="txt-hidden">slide2</a></li>
+                        <li class="slide3 swiper-slide"><a href="#" class="txt-hidden">slide3</a></li>
+                        <li class="slide4 swiper-slide"><a href="#" class="txt-hidden">slide4</a></li>
+                        <li class="slide5 swiper-slide"><a href="#" class="txt-hidden">slide5</a></li>
+                    </ul>
+                    <!-- /inner-banner -->
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- /inner-banner -->
+            </section>
+            <section class="new-event">
                 <div class="container">
-                    <div class="banner-box">
-                        <ul>
-                            <li>
-                                <a href="javascript:void(0)" class="right-align">
-                                    <span class="main-txt main-txt1">매주 수요일은</span>
-                                    <span class="main-txt main-txt2">10% 할인Day</span>
-                                    <span class="sub-txt">매주 수요일마다 달라지는 할인 상품을 놓치지 마세요!</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <span class="main-txt main-txt1">이달의 추천 식물</span>
-                                    <span class="main-txt main-txt2">이오난사 틸란드시아</span>
-                                    <span class="sub-txt">미세먼지 먹는 식물로 요즘 각광받고있어요~</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <span class="main-txt main-txt1">집안 분위기 메이커</span> <span class="main-txt main-txt2">행잉플랜트</span>
-                                    <span class="sub-txt">오직 그린하우스에만 있는 수입식물을 만나보세요</span>
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="ne-inner">
+                        <div class="title-set">
+                            <h3 class="title">NEW &amp; EVENT</h3>
+                            <span>sweet break</span>
+                        </div>
+                        <!-- /title-set -->
+                        <div class="sub-txt">
+                            <h4>던킨도너츠의 다양한 혜택과 이벤트 그리고 신제품</h4>
+                            <span>sweet break, dunkin' donuts</span>
+                        </div>
+                        <!-- /sub-txt -->
+                        <div class="video">
+
+                        </div>
+                        <!-- /video -->
+                        <div class="event-list clearfix">
+                            <a class="view-event" href="#">전체 이벤트보기</a>
+                            <div class="elist elist1 swiper-container2">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <img src="images/event1-1.jpg" alt="연유 던카치노">
+                                            <div class="event-info1">
+                                                <h5>2019 이달의 음료 10탄</h5>
+                                                <p class="date">2019-10-08 ~ 2019-10-14</p>
+                                                <span class="place">
+                                                    <img src="images/icons/online.png" alt="온라인">
+                                                </span>
+                                            </div>
+                                            <p class="event-info2">진한 커피와 연유의 달콤함이 부드럽게 어우러진 연유 던카치노 1+1</p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <img src="" alt="연유 던카치노">
+                                            <div class="event-info1">
+                                                <h5>2019 이달의 음료 10탄</h5>
+                                                <p class="date">2019-10-08 ~ 2019-10-14</p>
+                                                <span class="place">
+                                                    <img src="" alt="">
+                                                </span>
+                                            </div>
+                                            <p class="event-info2">진한 커피와 연유의 달콤함이 부드럽게 어우러진 연유 던카치노 1+1</p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <img src="" alt="연유 던카치노">
+                                            <div class="event-info1">
+                                                <h5>2019 이달의 음료 10탄</h5>
+                                                <p class="date">2019-10-08 ~ 2019-10-14</p>
+                                                <span class="place">
+                                                    <img src="" alt="">
+                                                </span>
+                                            </div>
+                                            <p class="event-info2">진한 커피와 연유의 달콤함이 부드럽게 어우러진 연유 던카치노 1+1</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /elist -->
+                            <div class="elist elist2 swiper-container2">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <img src="images/event2-1.jpg" alt="서울우유팩6,900원">
+                                            <div class="event-info1">
+                                                <h5>서울우유 우유도넛 세트</h5>
+                                                <p class="date">2019-10-08 ~ 2019-10-14</p>
+                                                <span class="place">
+                                                    <img src="images/icons/store.png" alt="store">
+                                                </span>
+                                            </div>
+                                            <p class="event-info2">BETTER FOR YOU! 던킨의 아침 선물 20% OFF</p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <img src="" alt="서울우유팩6,900원">
+                                            <div class="event-info1">
+                                                <h5>서울우유 우유도넛 세트</h5>
+                                                <p class="date">2019-10-08 ~ 2019-10-14</p>
+                                                <span class="place">
+                                                    <img src="" alt="online">
+                                                </span>
+                                            </div>
+                                            <p class="event-info2">BETTER FOR YOU! 던킨의 아침 선물 20% OFF</p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <img src="" alt="서울우유팩6,900원">
+                                            <div class="event-info1">
+                                                <h5>서울우유 우유도넛 세트</h5>
+                                                <p class="date">2019-10-08 ~ 2019-10-14</p>
+                                                <span class="place">
+                                                    <img src="" alt="store">
+                                                </span>
+                                            </div>
+                                            <p class="event-info2">BETTER FOR YOU! 던킨의 아침 선물 20% OFF</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /elist -->
+                            <div class="elist elist3 swiper-container2">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <img src="images/event3-1.jpg" alt="던킨로드">
+                                            <div class="event-info1">
+                                                <h5>DUNKIN ROAD</h5>
+                                                <p class="date">2019-10-13 ~ 2019-10-20</p>
+                                                <span class="place">
+                                                    <img src="images/icons/online.png" alt="온라인">
+                                                </span>
+                                            </div>
+                                            <p class="event-info2">던플에 있는 당신에게 던킨이 쏜다!</p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <img src="" alt="던킨로드">
+                                            <div class="event-info1">
+                                                <h5>DUNKIN ROAD</h5>
+                                                <p class="date">2019-10-13 ~ 2019-10-20</p>
+                                                <span class="place">
+                                                    <img src="" alt="online">
+                                                </span>
+                                            </div>
+                                            <p class="event-info2">던플에 있는 당신에게 던킨이 쏜다!</p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <img src="" alt="던킨로드">
+                                            <div class="event-info1">
+                                                <h5>DUNKIN ROAD</h5>
+                                                <p class="date">2019-10-13 ~ 2019-10-20</p>
+                                                <span class="place">
+                                                    <img src="" alt="online">
+                                                </span>
+                                            </div>
+                                            <p class="event-info2">던플에 있는 당신에게 던킨이 쏜다!</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /elist -->
+                            <div class="elist elist4 last swiper-container2">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <img src="images/event4-1.jpg" alt="던킨 모닝콤보">
+                                            <div class="event-info1">
+                                                <h5>던킨X카카오 선물하기 모닝콤보 30% OFF</h5>
+                                                <p class="date">2019-10-07 ~</p>
+                                                <span class="place">
+                                                    <img src="images/icons/online.png" alt="온라인">
+                                                </span>
+                                            </div>
+                                            <p class="event-info2">카카오선물하기<br/>던킨 모닝콤보 30% OFF</p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <img src="" alt="던킨 모닝콤보">
+                                            <div class="event-info1">
+                                                <h5>던킨X카카오 선물하기 모닝콤보 30% OFF</h5>
+                                                <p class="date">2019-10-07 ~</p>
+                                                <span class="place">
+                                                    <img src="" alt="online">
+                                                </span>
+                                            </div>
+                                            <p class="event-info2">카카오선물하기 던킨 모닝콤보 30% OFF</p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <img src="" alt="던킨 모닝콤보">
+                                            <div class="event-info1">
+                                                <h5>던킨X카카오 선물하기 모닝콤보 30% OFF</h5>
+                                                <p class="date">2019-10-07 ~</p>
+                                                <span class="place">
+                                                    <img src="" alt="online">
+                                                </span>
+                                            </div>
+                                            <p class="event-info2">카카오선물하기 던킨 모닝콤보 30% OFF</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /elist -->
+                            <!-- Add Pagination -->
+                            <div class="swiper-paginati"></div>
+                        </div>
+                        <!-- /event-list -->
                     </div>
-                    <!-- /banner-box -->
-                    <div class="rolling-btn-box">
-                        <ul class="rolling-btn">
-                            <!--js로 생성
-                            <li class="roll"><a href="#">순차버튼</a><li>
-                            -->
-                        </ul>
-                        <ul class="s-btn">
-                            <li class="stop-btn"><a href="javascript:void(0)">정지</a></li>
-                            <li class="start-btn"><a href="javascript:void(0)">시작</a></li>
-                        </ul>
-                    </div>
-                    <!-- /rolling-btn-box -->
-                    <div class="arrows">
-                        <ul>
-                            <li class="arrow arrow-R"><a href="javascript:void(0)">다음</a></li>
-                            <li class="arrow arrow-L"><a href="javascript:void(0)">이전</a></li>
-                        </ul>
-                    </div>
-                    <!-- /arrows -->
+                    <!-- /nw-inner -->
                 </div>
                 <!-- /container -->
-            </div>
-            <!-- /cont-banner -->
-            <div class="cont-box">
-                <section class="md-pick">
-                    <div class="container">
-                        <h3>MD's PCIK</h3>
-                        <div class="pick pick1">
-                            <a href="javascript:void(0)" class="hash-tag tag1">#공기정화식물</a>
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="images/plant-golden.jpg" alt="산세베리아 골든하니"></a>
-                                    <div class="pro-info">
-                                        <p class="comment">영원한 스테디셀러~!</p>
-                                        <p class="name">산세베리아 골든하니</p>
-                                        <div class="price discount">
-                                            <span class="percent">10%</span>
-                                            <span class="total">24,300</span>
-                                            <span>원</span>
-                                            <span class="original">27,000</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/plant-tiger.jpg" alt="산세베리아 하니 타이거"></a>
-                                    <div class="pro-info">
-                                        <p class="comment">무늬가 매력적인</p>
-                                        <p class="name">산세베리아 하니 타이거</p>
-                                        <div class="price">
-                                            <span class="percent">0%</span>
-                                            <span class="total">23,000</span>
-                                            <span>원</span>
-                                            <span class="original">23,000</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/plant-golden.jpg" alt="산세베리아 골든하니"></a>
-                                    <div class="pro-info">
-                                        <p class="comment">영원한 스테디셀러~!</p>
-                                        <p class="name">산세베리아 골든하니</p>
-                                        <div class="price discount">
-                                            <span class="percent">10%</span>
-                                            <span class="total">24,300</span>
-                                            <span>원</span>
-                                            <span class="original">27,000</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/plant-tiger.jpg" alt="산세베리아 하니 타이거"></a>
-                                    <div class="pro-info">
-                                        <p class="comment">무늬가 매력적인</p>
-                                        <p class="name">산세베리아 하니 타이거</p>
-                                        <div class="price">
-                                            <span class="percent">0%</span>
-                                            <span class="total">23,000</span>
-                                            <span>원</span>
-                                            <span class="original">23,000</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /pick1 -->
-                        <div class="pick pick2">
-                            <a href="javascript:void(0)" class="hash-tag tag2">#미세먼지제거</a>
-                            <ul>
-                                <li>
-                                   <a href="#"><img src="images/plant-skin.jpg" alt="스킨답서스"></a>
-                                    <div class="pro-info">
-                                        <p class="comment">공기정화 및 인테리어로 인기</p>
-                                        <p class="name">스킨답서스</p>
-                                        <div class="price">
-                                            <span class="percent">0%</span>
-                                            <span class="total">25,400</span>
-                                            <span>원</span>
-                                            <span class="original">25,400</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                   <a href="#"><img src="images/plant-skin.jpg" alt="스킨답서스"></a>
-                                    <div class="pro-info">
-                                        <p class="comment">공기정화 및 인테리어로 인기</p>
-                                        <p class="name">스킨답서스</p>
-                                        <div class="price">
-                                            <span class="percent">0%</span>
-                                            <span class="total">25,400</span>
-                                            <span>원</span>
-                                            <span class="original">25,400</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                   <a href="#"><img src="images/plant-skin.jpg" alt="스킨답서스"></a>
-                                    <div class="pro-info">
-                                        <p class="comment">공기정화 및 인테리어로 인기</p>
-                                        <p class="name">스킨답서스</p>
-                                        <div class="price">
-                                            <span class="percent">0%</span>
-                                            <span class="total">25,400</span>
-                                            <span>원</span>
-                                            <span class="original">25,400</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                   <a href="#"><img src="images/plant-skin.jpg" alt="스킨답서스"></a>
-                                    <div class="pro-info">
-                                        <p class="comment">공기정화 및 인테리어로 인기</p>
-                                        <p class="name">스킨답서스</p>
-                                        <div class="price">
-                                            <span class="percent">0%</span>
-                                            <span class="total">25,400</span>
-                                            <span>원</span>
-                                            <span class="original">25,400</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /pick2 -->
-                        <div class="pick pick3">
-                            <a href="javascript:void(0)" class="hash-tag tag3">#다육이</a>
-                            <ul>
-                                <li>
-                                   <a href="#"><img src="images/plant-yuri.jpg" alt="유리전"></a>
-                                    <div class="pro-info">
-                                        <p class="comment">어디서나 키우기 쉬운 다육이</p>
-                                        <p class="name">유리전</p>
-                                        <div class="price discount">
-                                            <span class="percent">10%</span>
-                                            <span class="total">11,700</span>
-                                            <span>원</span>
-                                            <span class="original">13,000</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                   <a href="#"><img src="images/plant-yuri.jpg" alt="유리전"></a>
-                                    <div class="pro-info">
-                                        <p class="comment">어디서나 키우기 쉬운 다육이</p>
-                                        <p class="name">유리전</p>
-                                        <div class="price discount">
-                                            <span class="percent">10%</span>
-                                            <span class="total">11,700</span>
-                                            <span>원</span>
-                                            <span class="original">13,000</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                   <a href="#"><img src="images/plant-yuri.jpg" alt="유리전"></a>
-                                    <div class="pro-info">
-                                        <p class="comment">어디서나 키우기 쉬운 다육이</p>
-                                        <p class="name">유리전</p>
-                                        <div class="price discount">
-                                            <span class="percent">10%</span>
-                                            <span class="total">11,700</span>
-                                            <span>원</span>
-                                            <span class="original">13,000</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                   <a href="#"><img src="images/plant-yuri.jpg" alt="유리전"></a>
-                                    <div class="pro-info">
-                                        <p class="comment">어디서나 키우기 쉬운 다육이</p>
-                                        <p class="name">유리전</p>
-                                        <div class="price discount">
-                                            <span class="percent">10%</span>
-                                            <span class="total">11,700</span>
-                                            <span>원</span>
-                                            <span class="original">13,000</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /pick3 -->
+            </section>
+            <section class="banner1">
+                <h3 class="show-left"><span>잠깐의 여유와</span><span>달콤한 행복</span></h3>
+                <p class="show-right"><img src="" alt="sweet break"></p>
+            </section>
+            <section class="dunkins-menu">
+                <div class="container">
+                    <h3 class="title">DUNKIN' DONUTS'S MENU</h3>
+                    <span class="sub-title">sweet break</span>
+                    <div class="sub-txt">
+                        <h4>던킨도너츠의 다양한 음료와 도넛들</h4>
+                        <span>Happiness, Fun, Refreshment, Energy and Break... If need be, just enjoy them! In busy daily lives,
+                        Dunkin' will be a sweet friend to you.</span>
                     </div>
-                    <!-- /container -->
-                </section>
-                <!-- /md-pick -->
-                <section class="banner-bar">
-                    <div class="container">
-                        <a href="#"><img src="images/middle-banner.jpg" alt="중간 띠배너-회원가입시 3000원 할인쿠폰 증정"></a>
-                    </div>
-                    <!-- /container -->
-                </section>
-                <!-- /banner-bar -->
-                <section class="best-item">
-                    <div class="container">
-                        <h3>BEST ITEM</h3>
-                        <span class="sub-title">한 달간의 베스트셀러 식물을 확인하세요.</span>
-                        <div class="best-list">
-                            <ul>
-                                <li class="top-best">
-                                    <a href="#"><img src="images/best_item1.jpg" alt="몬스테라"></a>
-                                    <div class="pro-info">
-                                        <p class="name">몬스테라</p>
-                                        <div class="price discount">
-                                            <span class="percent">10%</span>
-                                            <span class="total">34,700</span>
-                                            <span>원</span>
-                                            <span class="original">38,600</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/best_item2.jpg" alt="적오모자 선인장"></a>
-                                    <div class="pro-info">
-                                        <p class="name">적오모자 선인장</p>
-                                        <div class="price">
-                                            <span class="percent">0%</span>
-                                            <span class="total">32,600</span>
-                                            <span>원</span>
-                                            <span class="original">32,600</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/best_item3.jpg" alt="용신목 선인장"></a>
-                                    <div class="pro-info">
-                                        <p class="name">용신목 선인장</p>
-                                        <div class="price">
-                                            <span class="percent">0%</span>
-                                            <span class="total">24,800</span>
-                                            <span>원</span>
-                                            <span class="original">13,000</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/best_item4.jpg" alt="몰라"></a>
-                                    <div class="pro-info">
-                                        <p class="name">구아바</p>
-                                        <div class="price">
-                                            <span class="percent">0%</span>
-                                            <span class="total">13,500</span>
-                                            <span>원</span>
-                                            <span class="original">13,500</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/best_item5.jpg" alt="아이비"></a>
-                                    <div class="pro-info">
-                                        <p class="name">아이비</p>
-                                        <div class="price discount">
-                                            <span class="percent">10%</span>
-                                            <span class="total">8,800</span>
-                                            <span>원</span>
-                                            <span class="original">9,800</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /best-list -->
-                    </div>
-                    <!-- /container -->
-                </section>
-                <!-- /best-item -->
-                <section class="new-item">
-                    <div class="container">
-                        <h3>NEW ITEM</h3>
-                        <span class="sub-title">GREEN HOUSE의 새로운 식물을 만나보세요.</span>
-                        <div class="list-arrow">
-                            <ul>
-                               <li class="list-arrow-L"><a href="javascript:void(0)">이전</a></li>
-                                <li class="list-arrow-R"><a href="javascript:void(0)">다음</a></li>
-                            </ul>
-                        </div>
-                        <!-- /list-arrow -->
-                        <div class="new-list">
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="images/new_item1.jpg" alt="아이비"></a>
-                                    <div class="pro-info">
-                                        <p class="name">아가베</p>
-                                        <div class="price">
-                                            <span class="percent">0%</span>
-                                            <span class="total">98,000</span>
-                                            <span>원</span>
-                                            <span class="original">9,8000</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/new_item2.jpg" alt="아이비"></a>
-                                    <div class="pro-info">
-                                        <p class="name">칼라데아 오르비폴리아</p>
-                                        <div class="price">
-                                            <span class="percent">0%</span>
-                                            <span class="total">36,000</span>
-                                            <span>원</span>
-                                            <span class="original">36,000</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/new_item3.jpg" alt="아이비"></a>
-                                    <div class="pro-info">
-                                        <p class="name">트리안</p>
-                                        <div class="price">
-                                            <span class="percent">0%</span>
-                                            <span class="total">21,000</span>
-                                            <span>원</span>
-                                            <span class="original">21,000</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/new_item4.jpg" alt="아이비"></a>
-                                    <div class="pro-info">
-                                        <p class="name">스파티필름</p>
-                                        <div class="price">
-                                            <span class="percent">0%</span>
-                                            <span class="total">16,500</span>
-                                            <span>원</span>
-                                            <span class="original">16,500</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/new_item5.jpg" alt="아이비"></a>
-                                    <div class="pro-info">
-                                        <p class="name">라디아타 유칼립투스</p>
-                                        <div class="price">
-                                            <span class="percent">0%</span>
-                                            <span class="total">28,400</span>
-                                            <span>원</span>
-                                            <span class="original">28,400</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/new_item6.jpg" alt="아이비"></a>
-                                    <div class="pro-info">
-                                        <p class="name">엑사쿰</p>
-                                        <div class="price">
-                                            <span class="percent">0%</span>
-                                            <span class="total">25,000</span>
-                                            <span>원</span>
-                                            <span class="original">25,000</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/new_item7.jpg" alt="아이비"></a>
-                                    <div class="pro-info">
-                                        <p class="name">동백나무</p>
-                                        <div class="price">
-                                            <span class="percent">0%</span>
-                                            <span class="total">58,000</span>
-                                            <span>원</span>
-                                            <span class="original">58,000</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /new-list -->
-                    </div>
-                    <!-- /container -->
-                </section>
-                <!-- /new-item -->
-                <section class="interior">
-                    <div class="container">
-                        <div class="interior-article">
-                            <div class="interior-subject">
-                                <div class="subject-box">
-                                    <ul>
-                                        <li>
-                                            <p class="main-subject">Fresh Plants</p>
-                                            <p class="sub-subject">싱그러운</p>
-                                            <p class="sub-subject">자연 속 인테리어</p>
-                                            <a href="#" class="more-btn">더보기</a>
-                                        </li>
-                                        <li>
-                                            <p class="main-subject">Modern Plants</p>
-                                            <p class="sub-subject">자연과 함께</p>
-                                            <p class="sub-subject">어울리는 인테리어</p>
-                                            <a href="#" class="more-btn">더보기</a>
-                                        </li>
-                                        <li>
-                                            <p class="main-subject">Warm Plants</p>
-                                            <p class="sub-subject">따뜻한</p>
-                                            <p class="sub-subject">침실 인테리어</p>
-                                            <a href="#" class="more-btn">더보기</a>
-                                        </li>
-                                        <li>
-                                            <p class="main-subject">Deco Plants</p>
-                                            <p class="sub-subject">어디에나 잘 어울리는</p>
-                                            <p class="sub-subject">미니식물 인테리어</p>
-                                            <a href="#" class="more-btn">더보기</a>
-                                        </li>
-                                    </ul>
+                    <!-- /sub-txt -->
+                    <div class="menu-list">
+                        <ul>
+                            <li>
+                                <div class="menu-img">
+                                    <img src="" alt="donuts">
                                 </div>
-                                <!-- /subject-box -->
-                            </div>
-                            <!-- /interior-subject -->
-                            <div class="interior_view">
-                                <ul>
-                                    <li><img src="images/interior_img1.jpg" alt="식물인테리어1"></li>
-                                    <li><img src="images/interior_img2.jpg" alt="식물인테리어2"></li>
-                                    <li><img src="images/interior_img3.jpg" alt="식물인테리어3"></li>
-                                    <li><img src="images/interior_img4.jpg" alt="식물인테리어4"></li>
-                                </ul>
-                            </div>
-                            <!-- /interior_view -->
-                            <div class="cont-arrows">
-                                <ul>
-                                    <li class="cont-arrow-R"><a href="javascript:void(0)">다음</a></li>
-                                    <li class="cont-arrow-L"><a href="javascript:void(0)">이전</a></li>
-                                </ul>
-                            </div>
-                            <!-- /cont-arrows -->
-                        </div>
-                        <!-- /interior-article -->
+                                <!-- /menu-img -->
+                                <h5>donuts</h5>
+                                <a href="#">도넛 메뉴 보기</a>
+                            </li>
+                             <li>
+                                <div class="menu-img">
+                                    <img src="" alt="coffee">
+                                </div>
+                                <!-- /menu-img -->
+                                <h5>coffee</h5>
+                                <a href="#">커피 메뉴 보기</a>
+                            </li>
+                             <li>
+                                <div class="menu-img">
+                                    <img src="" alt="sandwiches">
+                                </div>
+                                <!-- /menu-img -->
+                                <h5>hot sandwiches</h5>
+                                <a href="#">샌드위치 메뉴 보기</a>
+                            </li>
+                             <li>
+                                <div class="menu-img">
+                                    <img src="" alt="beverage">
+                                </div>
+                                <!-- /menu-img -->
+                                <h5>beverage</h5>
+                                <a href="#">음료 메뉴 보기</a>
+                            </li>
+                             <li>
+                                <div class="menu-img">
+                                    <img src="" alt="others">
+                                </div>
+                                <!-- /menu-img -->
+                                <h5>others</h5>
+                                <a href="#">기타 메뉴 보기</a>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- /container -->
-                </section>
-                <!-- /interior -->
-                <section class="info">
-                    <div class="container">
-                        <div class="notice">
-                            <h3>NOTICE</h3>
-                            <a href="#" class="more-btn">더보기</a>
-                            <div class="notice-table">
-                                <table>
-                                    <tr>
-                                        <td class="notice-title"><a href="#">GREEN HOUSE와 카카오친구해요! 쿠폰 증정</a></td>
-                                        <td class="notice-date">2019. 07. 29</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="notice-title"><a href="#">더운 여름철 반려식물 키우는 팁</a></td>
-                                        <td class="notice-date">2019. 07. 26</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="notice-title"><a href="#">GREEN HOUSE 여름휴가 일정 안내</a></td>
-                                        <td class="notice-date">2019. 07. 24</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="notice-title"><a href="#">7월 신규가입자 SNS 이벤트 당첨자 발표</a></td>
-                                        <td class="notice-date">2019. 07. 22</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="notice-title"><a href="#">웰컴 이벤트 당첨자 발표</a></td>
-                                        <td class="notice-date">2019. 07. 15</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="notice-title"><a href="#">신규회원이 되시면 다양한 혜택을 드려요.</a></td>
-                                        <td class="notice-date">2019. 07. 10</td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <!-- /notice-table -->
-                        </div>
-                        <!-- /notice -->
-                        <div class="contact">
-                            <h3>CONTACT</h3>
-                            <div class="sns-list">
-                                <ul>
-                                    <li><a href="#"><img src="images/icons/sns1.jpg" alt="facebook"></a></li>
-                                    <li><a href="#"><img src="images/icons/sns2.jpg" alt="twitter"></a></li>
-                                    <li><a href="#"><img src="images/icons/sns3.jpg" alt="instagram"></a></li>
-                                    <li><a href="#"><img src="images/icons/sns4.jpg" alt="linkedin"></a></li>
-                                    <li><a href="#"><img src="images/icons/sns5.jpg" alt="youtube"></a></li>
-                                </ul>
-                            </div>
-                            <!-- /sns-list -->
-                        </div>
-                        <!-- /contact -->
-                    </div>
-                    <!-- /container -->
-                </section>
-                <!-- /info -->
-            </div>
-            <!-- /cont-box -->
+                    <!-- /menu-list -->
+                </div>
+                <!-- /container -->
+            </section>
+            <section>
+                <div class="store">
+                    <span class="s-sub-title">sweet break</span>
+                    <h3 class="s-title">FIND A STORE</h3>
+                    <h4><a href="#">매장찾기</a></h4>
+                    <p><a href="">달콤한 휴식을 즐길 수 있는 <strong>던킨도너츠 매장</strong>을 찾아보세요.</a></p>
+                    <a class="more" href="#">more</a>
+                </div>
+                <!-- /store -->
+                <div class="store">
+                    <span class="s-sub-title">sweet break</span>
+                    <h3 class="s-title">CATERING SERVICE</h3>
+                    <h4><a href="#">단체주문 &amp; 케이터링 서비스</a></h4>
+                    <p><a href="">특별한 날, 던킨과 함께 즐거운을 나누세요.</a></p>
+                    <a class="more" href="#">more</a>
+                </div>
+                <!-- /store -->
+            </section>
+            <section>
+                <h3 class="title">DUNKIN' DONUTS'S SNS</h3>
+                <span class="sub-title">sweet break</span>
+                <div class="sub-txt">
+                    <h4>던킨도너츠와 함께하는 SNS</h4>
+                </div>
+                <!-- /sub-txt -->
+                <div class="sns-list">
+                    <ul>
+                        <li><a href="#"><img src="" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="" alt="인스타그램"></a></li>
+                        <li><a href="#"><img src="" alt="블로그"></a></li>
+                        <li><a href="#"><img src="" alt="유튜브"></a></li>
+                        <li><a href="#"><img src="" alt="트위터"></a></li>
+                    </ul>
+                </div>
+                <!-- /sns-list -->
+                <div class="sns-contents">
+                    <ul>
+                        <li><a href="#"><img src="" alt="sns-content1"></a></li>
+                        <li><a href="#"><img src="" alt="sns-content2"></a></li>
+                        <li><a href="#"><img src="" alt="sns-content3"></a></li>
+                        <li><a href="#"><img src="" alt="sns-content4"></a></li>
+                        <li><a href="#"><img src="" alt="sns-content5"></a></li>
+                        <li><a href="#"><img src="" alt="sns-content6"></a></li>
+                        <li><a href="#"><img src="" alt="sns-content7"></a></li>
+                        <li><a href="#"><img src="" alt="sns-content8"></a></li>
+                    </ul>
+                </div>
+                <!-- /sns-contents -->
+            </section>
         </div>
+        <!-- /contents -->
         <footer id="footer">
             <div class="container">
-                <a href="#" class="slogo">GREEN HOUSE</a>
-                <div class="co-info">
-                    <p class="site-name">그린하우스</p>
-                    <p>대표이사: 홍길동 / 서울특별시 종로구 율곡로</p>
-                    <p>사업자등록번호: 123-45-678910 / 통신판매업신고번호: 제2010-서울종로-0호</p>
-                    <p>메일: hyunjeong670@gmail.com 팩스번호: 02-0000-0000</p>
-                    <p>호스팅서비스: Github</p>
-                    <p>COPYRIGHT © GREENHOUSE ALL RIGHTS RESERVED.</p>
+                <div class="left-area">
+                    <a class="logo" href="index.html">던킨도너츠</a>
+                    <div class="info">
+                        <p>
+                            <span>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</span>
+                        </p>
+                        <p>
+                            <span>사업자 등록번호 : 303-81-09535</span>
+                            <span>비알코리아(주) 대표이사 김창대</span>
+                        </p>
+                        <p>
+                            <span>TEL : 080-555-3131</span>
+                            <span>개인정보관리책임자 : 이중희</span>
+                        </p>
+                        <p>
+                            <span>COPYRIGHT Ⓒ 2016 BRKOREA COMPANY. ALL RIGHTS RESERVED.</span>
+                        </p>
+                    </div>
+                    <!-- /info -->
+                    <div class="btn">
+                        <a href="#"><img src="" alt="SPC그룹 사회공헌 활동"></a>
+                        <a href="#"><img src="" alt="소비자중심경영 인증제도"></a>
+                        <a href="#"><img src="" alt="국가품질상"></a>
+                        <select>
+                            <option>FAMILY SITE</option>
+                            <option><a href="http://www.spc.co.kr/" target="_blank">SPC그룹</a></option>
+                            <option><a href="http://www.brkorea.co.kr/" target="_blank">비알코리아</a></option>
+                            <option><a href="http://www.baskinrobbins.co.kr" target="_blank">배스킨라빈스</a></option>
+                            <option><a href="http://www.paris.co.kr/" target="_blank">파리바게뜨</a></option>
+                            <option><a href="http://www.shany.co.kr/" target="_blank">샤니</a></option>
+                            <option><a href="http://www.caffe-pascucci.co.kr/" target="_blank">파스쿠찌</a></option>
+                            <option><a href="http://www.happypointcard.com" target="_blank">해피포인트카드</a></option>
+                            <option><a href="http://www.dunkinschool.co.kr/" target="_blank">던킨 온라인 스쿨</a></option>
+                            <option><a href="http://dunkindonuts.alba.co.kr/job/brand/" target="_blank">던킨 아르바이트</a></option>
+                        </select>
+                    </div>
+                    <!-- /btn -->
                 </div>
-                <!-- /co-info -->
-                <div class="service">
-                    <p class="cs-center">고객센터</p>
-                    <p class="cs-number"><strong>1234-5678</strong></p>
-                    <p class="cs-time">
-                        <span>상담시간 9:00 ~ 18:00</span>
-                        <span>점심시간 12:00 ~ 1:00</span>
-                        <span>주말 및 공휴일 휴무</span>
-                    </p>
+                <!-- /left-area -->
+                <div class="right-area">
+                    <div class="site-map">
+                        <ul class="smap1">
+                            <li>
+                                <dl>
+                                    <dt><a href="#">MENU</a></dt>
+                                    <dd><a href="#">DONUT</a></dd>
+                                    <dd><a href="#">MEAL</a></dd>
+                                    <dd><a href="#">COFFEE</a></dd>
+                                    <dd><a href="#">BEVERAGE</a></dd>
+                                    <dd><a href="#">OTHERS</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#">EVENT</a></dt>
+                                    <dd><a href="#">매장 프로모션</a></dd>
+                                    <dd><a href="#">온라인 이벤트</a></dd>
+                                    <dd><a href="#">당첨자 발표</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#">STORE</a></dt>
+                                    <dd><a href="#">오프라인 STORE</a></dd>
+                                    <dd><a href="#">온라인 STORE</a></dd>
+                                    <dd><a href="#">가맹점 개설 안내</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#">BRAND</a></dt>
+                                    <dd><a href="#">브랜드 소개</a></dd>
+                                    <dd><a href="#">뉴스 &amp; 공지</a></dd>
+                                    <dd><a href="#">CF</a></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <ul class="smap2">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#"><strong>가맹점 개설 안내</strong></a></li>
+                            <li><a href="#">영양정보</a></li>
+                        </ul>
+                        <ul class="fsns">
+                            <li><a href="#"><img src="" alt="페이스북"></a></li>
+                            <li><a href="#"><img src="" alt="인스타그램"></a></li>
+                            <li><a href="#"><img src="" alt="블로그"></a></li>
+                            <li><a href="#"><img src="" alt="유튜브"></a></li>
+                            <li><a href="#"><img src="" alt="트위터"></a></li>
+                        </ul>
+                    </div>
+                    <!-- /site-map -->
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">윤리신고센터</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                            <li><a href="#">이메일무단수집거부</a></li>
+                            <li><a href="#">거래희망회사 사전등록</a></li>
+                            <li><a href="#">채용안내</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <!-- /service -->
+                <!-- /right-area -->
             </div>
             <!-- /container -->
         </footer>
@@ -670,7 +772,39 @@
 	<!-- 자바스크립트 라이브러리 -->
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/script.js"></script>
-
+    <!--<script src="js/swiper.min.js"></script>-->
+    <!-- Initialize Swiper -->
+    <script>
+        /*
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          loop: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        });
+        */
+        /*
+        var swiper = new Swiper('.swiper-container2', {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          loop: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-paginati',
+            clickable: true,
+          },
+        });*/
+    </script>
 
 </body>
 </html>
