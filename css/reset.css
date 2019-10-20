@@ -1,6 +1,6 @@
 @charset "utf-8";
 @font-face {
-    font-family: 'NanumGothic';
+    font-family: 'NanumBarunGothic';
     src: url(font/NanumBarunGothic.ttf) format('truetype');
 }
 
@@ -19,7 +19,7 @@ a {color: #75675c; text-decoration: none;}
 a:hover,a:active,a:focu {color: #75675c; text-decoration:none}
 
 /* 폰트 초기화 */
-body, input, textarea, select, button, table {font-family:'NanumGothic','Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #75675c; font-size: 13px; line-height: 1.5;}
+body, input, textarea, select, button, table {font-family:'NanumBarunGothic','Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #75675c; font-size: 13px; line-height: 1.5;}
 
 /* 폰트 스타일 초기화 */
 em,address {font-style:normal;}
