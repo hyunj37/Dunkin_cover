@@ -1,26 +1,30 @@
 @charset "utf-8";
 
-/** skip nav **/
+/**********
+skip nav
+**********/
 #skip {position:relative}
 #skip a {position:absolute; width:130px; left:0; top:-40px; border:1px solid #fff; color:#fff; background:#333; line-height:30px; text-align:center}
 #skip a:active, 
 #skip a:focus {top:0}
 
+/**********
+전체 레이아웃
+**********/
+.wrapper {width:100%; min-width:1280px; overflow:hidden}
+.container {width:1224px; padding:0 28px; margin:0 auto}/*1280기준*/
 
-/** 전체 레이아웃 **/
-.wrapper {width:100%; min-width:1280px}
-.container {width:1224px; padding:0 28px; margin:0 auto}
-
-
-/** 공통 **/
-.last {margin-right:0 !important}
+/**********
+공통
+**********/
 ul li:last-child {margin-right:0 !important}
+.last {margin-right:0 !important}
 .floatL {float:left !important}
 .floatR {float:right !important}
 
-
-
-/** header **/
+/**********
+header
+**********/
 #header {border-top:3px solid #2c1810;}
 /*top area*/
 #header .top-area {overflow:hidden; height:120px; border-bottom:2px solid #eee; background:#f8faf0; position:relative}
@@ -76,16 +80,16 @@ ul li:last-child {margin-right:0 !important}
 #header .gnb-menu .main-menu ul li .sub-menu .list-menu .group dl dd a {display:block; padding:5px 0; width:170px}
 #header .gnb-menu .main-menu ul li .sub-menu .list-menu .group dl dd a:hover {color:#f9b234}
 
-/** contents **/
-/*공통*/
-#contents .title-set {float:left; margin-top:20px}
-#contents .title-set h3.title {font-family:'Nunito', sans-serif; font-size:20px; color:#2c1810; font-weight:900; letter-spacing:-2px}
-#contents .title-set span {display:block; font-family:'Great Vibes', cursive; font-size:35px; color:#d1c1a7; margin-top:-20px}
-#contents .sub-txt {position:relative; float:left; padding-top:34px;  margin:15px 0 0 90px}
-#contents .sub-txt:before {content:''; position:absolute; top:0; left:0; width:20px; height:2px; background:#ab9b7f}
+/**********
+contents
+**********/
+/*공통 타이틀*/
+#contents .title-set h3.title {font-family:'Nunito', sans-serif; font-size:20px; color:#2c1810; font-weight:900; letter-spacing:-1px; line-height:1}
+#contents .title-set .sub-title {display:block; font-family:'Great Vibes', cursive; font-size:35px; color:#d1c1a7; line-height:1}
+#contents .sub-txt {position:relative; padding-top:34px; margin:20px 0 32px}
+#contents .sub-txt:before {content:''; position:absolute; top:0; left:50%; margin-left:-10px; width:20px; height:2px; background:#ab9b7f}
 #contents .sub-txt h4 {font-size:17px; color:#392213; letter-spacing:-2px}
-#contents .sub-txt span {margin-top:18px; font-size:11px; color:#a19e99}
-
+#contents .sub-txt span {display:block; margin-top:15px; font-size:11px; color:#a19e99}
 
 /*banner*/
 #contents .banner {position:relative; height:670px;}
@@ -100,8 +104,10 @@ ul li:last-child {margin-right:0 !important}
 /*NEW&EVENT*/
 #contents .new-event {margin-top:90px}
 #contents .new-event .ne-inner {padding:0 52px}
+#contents .new-event .title-set {float:left; margin-top:20px}
 #contents .new-event .title-set span {margin-left:60px}
-#contents .new-event .sub-txt {width:180px}
+#contents .new-event .sub-txt {float:left; width:180px; margin:15px 0 0 90px}
+#contents .new-event .sub-txt:before {left:0; margin-left:0}
 #contents .new-event .video {float:right; width:443px; height:245px; border-radius:4px; position:relative; background:#eee}
 #contents .new-event .video:before {content:''; position:absolute; top:12px; left:-10px; width:54px; height:21px; background:url(../images/new-flg.png) no-repeat}
 #contents .new-event .event-list {clear:both; padding-top:30px; position:relative}
@@ -117,13 +123,85 @@ ul li:last-child {margin-right:0 !important}
 
 /*banner1*/
 #contents .banner1 {margin-top:90px; height:400px; background:url(../images/banner_bg1.jpg) center 0 no-repeat; background-attachment:fixed; overflow:hidden;position:relative}
-#contents .banner1 h3.show-left {font-size:60px; color:#2c1810; line-height:1; letter-spacing:-2px; top:120px; position:absolute; left:50%; margin-left:-340px}
+#contents .banner1 h3.show-left {font-family:'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; font-weight:100; font-size:60px; color:#372317; line-height:1; letter-spacing:-2px; top:120px; position:absolute; left:50%; margin-left:-340px}
 #contents .banner1 h3 span {display:block}
 #contents .banner1 h3 span:last-child {margin-left:100px}
 #contents .banner1 .show-right {position:absolute; top:250px; right:50%; margin-right:-70px}
 
-/** footer **/
+/*dunkins-menu*/
+#contents .dunkins-menu {margin-top:90px; text-align:center}
+#contents .dunkins-menu .menu-list {overflow:hidden}
+#contents .dunkins-menu .menu-list ul li {float:left; margin-right:25px; height:320px}
+#contents .dunkins-menu .menu-list ul li:nth-child(4) {margin-right:24px}
+#contents .dunkins-menu .menu-list ul li h5 {margin:15px 0 21px; font-size:22px; letter-spacing:-1px; color:#372317; font-weight:bold}
+#contents .dunkins-menu .menu-list ul li .menu-btn {padding:8px 18px; border:1px solid #ab9b7f; border-radius:3px; font-size:12px; color:#ab9b7f}
 
+/*store-catering*/
+#contents .store-catering {margin:140px 0 50px; height:510px; background:url(../images/banner_bg2.jpg) center 0 no-repeat; background-attachment:fixed; position:relative}
+/*store*/
+#contents .store-catering .store {position:absolute; top:-50px; left:50%; margin-left:-454px; width:280px; height:380px; padding-left:100px; border-radius:50%; background:url(../images/store-bg.png) no-repeat}
+#contents .store-catering .store .title-set {margin-top:75px}
+#contents .store-catering .store .title-set .sub-title {font-size:24px; color:#bf862a;}
+#contents .store-catering .store .title-set .title {font-size:16px; color:#fff; margin-left:30px}
+#contents .store-catering .store h4 {margin-top:60px; letter-spacing: -1px}
+#contents .store-catering .store h4 a {font-size:17px; color:#fff}
+#contents .store-catering .store p {margin-top:15px}
+#contents .store-catering .store p a {font-size:15px; letter-spacing:-1px; color:#fff}
+#contents .store-catering .store p a strong {color:#ff8a00}
+#contents .store-catering .store .more {display:block; margin-top:40px; padding-left:73px; font-size:12px; color:#fff;  font-weight:bold; position:relative}
+#contents .store-catering .store .more:before {content:''; width:60px; height:1px; background:#fff; position:absolute; left:0; top:9px}
+/*catering*/
+#contents .store-catering .catering {position:absolute; bottom:-50px; left:50%; margin-left:-30px; width:215px; height:380px; padding-left:165px; border-radius:50%; background:#f9f4ec}
+#contents .store-catering .catering:before {content:''; width:135px; height:129px; background:url(../images/catering.jpg) no-repeat; position:absolute; top:145px; left:20px}
+#contents .store-catering .catering .title-set {margin-top:107px}
+#contents .store-catering .catering .title-set .sub-title {font-size:24px; color:#bf862a; margin-left:-30px}
+#contents .store-catering .catering .title-set .title {font-size:16px}
+#contents .store-catering .catering h4 {margin-top:30px; letter-spacing: -1px}
+#contents .store-catering .catering h4 a {font-size:17px; color:#372317}
+#contents .store-catering .catering p {margin-top:24px}
+#contents .store-catering .catering p a {font-size:15px; letter-spacing:-1px}
+#contents .store-catering .catering .more {display:block; margin-top:25px; padding-left:73px; font-size:12px; font-weight:bold; color:#372317; position:relative}
+#contents .store-catering .catering .more:before {content:''; width:60px; height:1px; background:#372317; position:absolute; left:0; top:9px}
+
+/*sns*/
+#contents .sns {margin-top:90px; text-align:center}
+#contents .sns .sns-list {overflow:hidden; margin-left:422px}
+#contents .sns .sns-list ul li {float:left; margin-right:14px}
+#contents .sns .sns-list ul li a {display:block; width:65px; height:65px; background:url(../images/icons/icon-sns.png) no-repeat;}
+#contents .sns .sns-list ul li.sns1 a {background-position:0 0}
+#contents .sns .sns-list ul li.sns2 a {background-position:0 -66px}
+#contents .sns .sns-list ul li.sns3 a {background-position:0 -132px}
+#contents .sns .sns-list ul li.sns4 a {background-position:0 -198px}
+#contents .sns .sns-list ul li.sns5 a {background-position:0 -264px}
+#contents .sns .sns-contents {margin-top:50px; width:2080px; height:230px; position:relative}/*width삭제하기*/
+#contents .sns .sns-contents .sns-cont-box {position:absolute; left:0}
+#contents .sns .sns-contents .sns-cont-box li {float:left}
+
+
+/**********
+footer
+**********/
+#footer {margin-top:90px}
+#footer .left-area {float:left}
+#footer .left-area .logo {width:85px; height:14px; background:url(../images/footer-logo.png) no-repeat; margin-top:3px}
+#footer .left-area .info {margin-top:36px; font-size:11px}
+#footer .left-area .info p {margin-bottom:10px}
+#footer .left-area .info p span.right-txt1 {margin-left:40px}
+#footer .left-area .info p span.right-txt2 {margin-left:92px}
+#footer .left-area .btn {margin-top:55px}
+#footer .left-area .btn a {float:left}
+#footer .left-area .btn a.spc-story {margin-right:13px}
+#footer .left-area .btn a.ccm {margin:10px 2px 0 0}
+#footer .left-area .btn a.ksa {margin-top:10px}
+#footer .left-area .btn .family-site {clear:both; margin-top:6px}
+#footer .left-area .btn .family-site button {width:137px; height:30px; border:1px solid #b9b3b2; border-radius:3px; color:#000; font-size:11px; background:none; text-align:inherit; padding-left:16px; position:relative; cursor:pointer}
+#footer .left-area .btn .family-site button:after {content:''; width:9px; height:5px; background:url(../images/icons/arrow-bottom-f.jpg) no-repeat; position:absolute; right:10px; top:11px}
+#footer .left-area .btn .family-site ul {}
+
+
+
+
+#footer .right-area {float:right}
 
 
 
