@@ -53,8 +53,8 @@ header
 #header .gnb-menu .main-menu ul li {float:left;}
 #header .gnb-menu .main-menu ul li a.menu-title {display: block; padding:21px 50px 20px; color:#2c1810; letter-spacing: 2px; font-family: 'Hind', 'NanumGothic','Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif;font-weight:800}
 #header .gnb-menu .main-menu ul li.on a.menu-title {color:#f9b234; position:relative}
-#header .gnb-menu .main-menu ul li.on a.menu-title:after {content:''; width:4px; height:4px; border-radius:50%; border:4px solid #f9b234; position:absolute; bottom:-6px; left:50%; margin-left:-6px; background:#fff; z-index:11}
-#header .gnb-menu .main-menu ul li .sub-menu {position:absolute; top:61px; left:0; width:100%; height:260px; background:#fff; padding:20px 0; border-bottom:1px solid #2c1810; z-index:10; display:none}
+#header .gnb-menu .main-menu ul li.on a.menu-title:after {content:''; width:4px; height:4px; border-radius:50%; border:4px solid #f9b234; position:absolute; bottom:-6px; left:50%; margin-left:-6px; background:#fff; z-index:15}
+#header .gnb-menu .main-menu ul li .sub-menu {position:absolute; top:61px; left:0; width:100%; height:260px; padding:20px 0; z-index:11; display:none}
 #header .gnb-menu .main-menu ul li.on .sub-menu {display:block}/*제이쿼리 쓰고 삭제하기*/
 /*gnb banner*/
 #header .gnb-menu .main-menu ul li .sub-menu .gnb-banner {float:right;}
@@ -79,6 +79,8 @@ header
 #header .gnb-menu .main-menu ul li .sub-menu .list-menu .group:hover dl dt a {color:#000}
 #header .gnb-menu .main-menu ul li .sub-menu .list-menu .group dl dd a {display:block; padding:5px 0; width:170px}
 #header .gnb-menu .main-menu ul li .sub-menu .list-menu .group dl dd a:hover {color:#f9b234}
+/*gnb background*/
+#header .gnb-menu .main-menu .main-menu-bg {display:none; position:absolute; top:61px; left:0; width:100%; height:260px; background:#fff; padding:20px 0; border-bottom:1px solid #2c1810; z-index:10;}
 
 /**********
 contents
@@ -108,8 +110,9 @@ contents
 #contents .new-event .title-set span {margin-left:60px}
 #contents .new-event .sub-txt {float:left; width:180px; margin:15px 0 0 90px}
 #contents .new-event .sub-txt:before {left:0; margin-left:0}
-#contents .new-event .video {float:right; width:443px; height:245px; border-radius:4px; position:relative; background:#eee}
+#contents .new-event .video {float:right; width:432px; height:243px; border-radius:4px; position:relative; background:#eee}
 #contents .new-event .video:before {content:''; position:absolute; top:12px; left:-10px; width:54px; height:21px; background:url(../images/new-flg.png) no-repeat}
+#contents .new-event .video iframe {border-radius:4px}
 #contents .new-event .event-list {clear:both; padding-top:30px; position:relative}
 #contents .new-event .event-list .view-event {position:absolute; top:-45px; left:0; border:1px solid #ab9b7f; border-radius:3px; padding:12px 38px}
 #contents .new-event .event-list .elist {float:left; width:272px; height:452px; border:1px solid #d1cccb; border-radius:3px; overflow:hidden; margin-right:8px}
@@ -192,7 +195,7 @@ footer
 #footer .left-area .info p {margin-bottom:10px}
 #footer .left-area .info p span.right-txt1 {margin-left:40px}
 #footer .left-area .info p span.right-txt2 {margin-left:92px}
-#footer .left-area .btn {margin-top:55px}
+#footer .left-area .btn {margin-top:65px}
 #footer .left-area .btn a {float:left}
 #footer .left-area .btn a.spc-story {margin-right:13px; margin-bottom:6px;}
 #footer .left-area .btn a.ccm {margin:10px 2px 0 0}
@@ -200,10 +203,11 @@ footer
 #footer .left-area .btn .family-site {clear:both; position:relative}
 #footer .left-area .btn .family-site button {width:140px; height:30px; border:1px solid #b9b3b2; border-radius:3px; color:#000; font-size:11px; background:none; text-align:inherit; padding-left:16px; position:relative; cursor:pointer}
 #footer .left-area .btn .family-site button:after {content:''; width:9px; height:5px; background:url(../images/icons/arrow-bottom-f.jpg) no-repeat; position:absolute; right:10px; top:11px}
-#footer .left-area .btn .family-site ul {position:absolute; left:0; top:-235px; background:#eee; border:1px solid #b9b3b2; border-radius:3px;}
+#footer .left-area .btn .family-site ul {position:absolute; left:0; top:-245px; background:#eee; border:1px solid #b9b3b2; border-radius:3px; padding:5px 0}
 #footer .left-area .btn .family-site ul li a {display:block; width:122px; padding:5px 0 5px 16px; font-size:11px}
+#footer .left-area .btn .family-site ul li a:hover {background:#ddd}
 #footer .right-area {float:right}
-#footer .right-area .site-map {overflow:hidden; width:754px; border-top:2px solid #c7c4c2; padding-bottom:50px; position:relative}
+#footer .right-area .site-map {overflow:hidden; width:754px; border-top:2px solid #c7c4c2; padding-bottom:50px; position:relative; line-height:1}
 #footer .right-area .site-map .smap1 li {float:left; width:143px}
 #footer .right-area .site-map .smap1 li dl dt {margin:20px 0 27px 0}
 #footer .right-area .site-map .smap1 li dl dt a {font-size:12px; font-weight:bold}
@@ -220,7 +224,10 @@ footer
 #footer .right-area .site-map .fsns li .fsns3 {background-position:0 -402px}
 #footer .right-area .site-map .fsns li .fsns4 {background-position:0 -438px}
 #footer .right-area .site-map .fsns li .fsns5 {background-position:0 -474px}
-
+#footer .right-area .footer-menu {margin:12px 0 90px; padding-top:17px; border-top:1px solid #c7c4c2}
+#footer .right-area .footer-menu ul li {float:left; margin-right:62px}
+#footer .right-area .footer-menu ul li a {font-size:12px}
+#footer .right-area .footer-menu ul li a strong {color:#ff0000}
 
 
 
