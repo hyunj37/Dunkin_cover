@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     
     <!-- 파비콘 -->
-    <link rel="shortcut icon" href="images/icons/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="images/icons/favicon_72.png">
-    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="images/icons/favicon_96.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/favicon_144.png">
-    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="images/icons/favicon_192.png">
+    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="images/favicon/favicon_96.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/favicon_144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="images/favicon/favicon_192.png">
 
     <!--구글폰트-->
     <link href="https://fonts.googleapis.com/css?family=Concert+One|Great+Vibes|Nunito:700,800,900&display=swap" rel="stylesheet">
@@ -329,6 +329,8 @@
                         <li class="slide3 swiper-slide"><a href="#" class="txt-hidden">slide3</a></li>
                         <li class="slide4 swiper-slide"><a href="#" class="txt-hidden">slide4</a></li>
                         <li class="slide5 swiper-slide"><a href="#" class="txt-hidden">slide5</a></li>
+                        <li class="slide6 swiper-slide"><a href="#" class="txt-hidden">slide6</a></li>
+                        <li class="slide7 swiper-slide"><a href="#" class="txt-hidden">slide7</a></li>
                     </ul>
                     <!-- /inner-banner -->
                     <!-- Add Pagination -->
@@ -715,8 +717,8 @@
                         <a class="ccm" href="#"><img src="images/ccm.png" alt="소비자중심경영 인증제도"></a>
                         <a class="ksa" href="#"><img src="images/ksa.png" alt="국가품질상"></a>
                         <div class="family-site">
-                            <button type="button">FAMILY SITE</button>
-                            <ul>
+                            <button class="toggle-btn" type="button">FAMILY SITE</button>
+                            <ul class="toggle-cont">
                                 <li><a href="http://www.spc.co.kr/" target="_blank">SPC그룹</a></li>
                                 <li><a href="http://www.brkorea.co.kr/" target="_blank">비알코리아</a></li>
                                 <li><a href="http://www.baskinrobbins.co.kr" target="_blank">배스킨라빈스</a></li>
@@ -808,11 +810,12 @@
 	
 	<!-- 자바스크립트 라이브러리 -->
     <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
     <script src="js/script.js"></script>
-    <!--<script src="js/swiper.min.js"></script>-->
+    <script src="js/swiper.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
-        /*
+
         var swiper = new Swiper('.swiper-container', {
           slidesPerView: 1,
           spaceBetween: 0,
@@ -825,9 +828,13 @@
             el: '.swiper-pagination',
             clickable: true,
           },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
         });
-        */
-        /*
+
+
         var swiper = new Swiper('.swiper-container2', {
           slidesPerView: 1,
           spaceBetween: 0,
@@ -840,7 +847,7 @@
             el: '.swiper-paginati',
             clickable: true,
           },
-        });*/
+        });
     </script>
 
 </body>

@@ -11,6 +11,7 @@ skip nav
 /**********
 전체 레이아웃
 **********/
+body {padding-top:186px}
 .wrapper {width:100%; min-width:1280px; overflow:hidden}
 .container {width:1224px; padding:0 28px; margin:0 auto}/*1280기준*/
 
@@ -25,9 +26,10 @@ ul li:last-child {margin-right:0 !important}
 /**********
 header
 **********/
-#header {border-top:3px solid #2c1810;}
+#header {border-top:3px solid #2c1810; position:fixed; top:0; width:100%; z-index:1000}
 /*top area*/
 #header .top-area {overflow:hidden; height:120px; border-bottom:2px solid #eee; background:#f8faf0; position:relative}
+#header .top-area .container {position:relative}
 #header .top-area .monthly-dunkin {position:absolute; top:0; right:28px;}
 #header .top-area .monthly-dunkin button {position:relative; width:155px; height:22px; border-radius:0 0 4px 4px; padding-left:20px; background:#2c1810; color:#f9b234; font-size:11px; line-height:20px; cursor:pointer;}
 #header .top-area .monthly-dunkin button:before {content:''; position:absolute; top:7px; left:13px; width:10px; height:5px; background:url(../images/icons/arrow-bottom.png) no-repeat;}
@@ -43,7 +45,7 @@ header
 #header .top-area .top-link ul li.search a {padding-right:78px; position:relative}
 #header .top-area .top-link ul li.search a:after {content:''; width:46px; height:46px; border-radius:50%; border:1px solid #eee; background:#fff url(../images/icons/search-icon.png) center no-repeat; position:absolute; top:-18px; right:0}
 /*gnb*/
-#header .gnb-menu {position:relative; border-bottom:1px solid #2c1810}
+#header .gnb-menu {position:relative; border-bottom:1px solid #2c1810; background:#fff}
 /*gnb left-side*/
 #header .gnb-menu .left-menu {float:left}
 #header .gnb-menu .left-menu ul li {float:left; margin-right:40px}
@@ -59,13 +61,13 @@ header
 /*gnb banner*/
 #header .gnb-menu .main-menu ul li .sub-menu .gnb-banner {float:right;}
 #header .gnb-menu .main-menu ul li .sub-menu .gnb-banner a { display:inline-block; width:365px; height:248px; position:relative}
-#header .gnb-menu .main-menu ul li .sub-menu .gnb-banner .btitle {margin:50px 0 0 30px; font-size:20px; color:#613736; font-weight:bold; line-height:1}
+#header .gnb-menu .main-menu ul li .sub-menu .gnb-banner .btitle {margin:50px 0 0 30px; font-size:21px; color:#613736; font-weight:bold; line-height:1}
 #header .gnb-menu .main-menu ul li .sub-menu .gnb-banner strong {display:block; margin:3px 0 0 30px; font-size:20px; color:#DA3020; font-weight:bold; line-height:1}
 #header .gnb-menu .main-menu ul li .sub-menu .gnb-banner .btxt {margin:7px 0 0 30px; font-size:13px; color:#613736; font-weight:600; line-height:1.2}
 #header .gnb-menu .main-menu ul li .sub-menu .gnb-banner .bmore {display:block; position:absolute; left:30px; bottom:40px; width:45px; height:45px; border-radius:50%; border:1px solid #d1cccb; text-align:center}
-#header .gnb-menu .main-menu ul li .sub-menu .gnb-banner .bmore span {font-size:10px; color:#827272; line-height:43px; font-weight:bold}
+#header .gnb-menu .main-menu ul li .sub-menu .gnb-banner .bmore span {font-size:11px; color:#827272; line-height:43px; font-weight:bold}
 #header .gnb-menu .main-menu ul li .sub-menu .gnb-banner .bmore2 {display:block; position:absolute; left:30px; top:110px; width:70px; height:25px; border-radius:4px; background:#998366; text-align:center}
-#header .gnb-menu .main-menu ul li .sub-menu .gnb-banner .bmore2 span {font-size:10px; color:#fff; line-height:25px; font-weight:bold}
+#header .gnb-menu .main-menu ul li .sub-menu .gnb-banner .bmore2 span {font-size:11px; color:#fff; line-height:25px; font-weight:bold}
 /*gnb banner bg*/
 #header .gnb-menu .main-menu ul li.menu1 .sub-menu .gnb-banner a:nth-child(1) {background:url(../images/gnb_happyorder.png) no-repeat}
 #header .gnb-menu .main-menu ul li.menu1 .sub-menu .gnb-banner a:nth-child(2) {background:url(../images/gnb_happyemarket.png) no-repeat}
@@ -102,6 +104,13 @@ contents
 #contents .banner .inner-banner ul li.slide3 a {background:url(../images/banner3.jpg) center 0 no-repeat}
 #contents .banner .inner-banner ul li.slide4 a {background:url(../images/banner4.jpg) center 0 no-repeat}
 #contents .banner .inner-banner ul li.slide5 a {background:url(../images/banner5.jpg) center 0 no-repeat}
+#contents .banner .inner-banner ul li.slide6 a {background:url(../images/banner6.jpg) center 0 no-repeat}
+#contents .banner .inner-banner ul li.slide7 a {background:url(../images/banner7.jpg) center 0 no-repeat}
+#contents .banner .inner-banner .swiper-button-prev {width:80px; height:20px; background-image: url(../images/arrow_prev.png); left:50%; margin-left:-690px; background-size:inherit}
+#contents .banner .inner-banner .swiper-button-next {width:80px; height:20px; background-image: url(../images/arrow_next.png); right:50%; margin-right:-690px; background-size:inherit}
+#contents .banner .inner-banner .swiper-pagination-bullet {width:6px; height:6px; background:#d6cfcd; opacity:1; margin:0 3px; vertical-align:middle}
+#contents .banner .inner-banner .swiper-pagination-bullet-active{width:10px; height:10px; background:#fff; opacity:1}
+#contents .banner .inner-banner .swiper-pagination-bullets {bottom:50px}
 
 /*NEW&EVENT*/
 #contents .new-event {margin-top:90px}
@@ -123,13 +132,19 @@ contents
 #contents .new-event .event-list .elist ul li a .event-info1 .date {font-size:13px; margin-top:6px}
 #contents .new-event .event-list .elist ul li a .event-info1 .place {position:absolute; bottom:107px; right:20px}
 #contents .new-event .event-list .elist ul li a .event-info2 {border-top:1px solid #d1cccb; padding:22px 22px 0; font-size:17px; letter-spacing:-2px}
+#contents .new-event .event-list .swiper-pagination-bullet {width:6px; height:6px; background:#c1ae96; opacity:1; margin:0 4px; vertical-align:middle}
+#contents .new-event .event-list .swiper-pagination-bullet-active{width:10px; height:10px; background:#2c1810; opacity:1}
+#contents .new-event .event-list .swiper-pagination-bullets {position:absolute; bottom:-40px; left:0; width:100%; text-align:center}
+
 
 /*banner1*/
 #contents .banner1 {margin-top:90px; height:400px; background:url(../images/banner_bg1.jpg) center 0 no-repeat; background-attachment:fixed; overflow:hidden;position:relative}
-#contents .banner1 h3.show-left {font-family:'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; font-weight:100; font-size:60px; color:#372317; line-height:1; letter-spacing:-2px; top:120px; position:absolute; left:50%; margin-left:-340px}
+#contents .banner1 h3.show-left {font-family:'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; font-weight:100; font-size:60px; color:#372317; line-height:1; letter-spacing:-7px; top:120px; position:absolute; left:50%; margin-left:-2000px; transition:all .5s}
+#contents .banner1 h3.show-left.on {margin-left:-340px}
 #contents .banner1 h3 span {display:block}
 #contents .banner1 h3 span:last-child {margin-left:100px}
-#contents .banner1 .show-right {position:absolute; top:250px; right:50%; margin-right:-70px}
+#contents .banner1 .show-right {position:absolute; top:250px; right:50%; margin-right:-2000px; transition:all .5s}
+#contents .banner1 .show-right.on {margin-right:-72px}
 
 /*dunkins-menu*/
 #contents .dunkins-menu {margin-top:90px; text-align:center}
@@ -146,7 +161,8 @@ contents
 /*store-catering*/
 #contents .store-catering {margin:140px 0 50px; height:510px; background:url(../images/banner_bg2.jpg) center 0 no-repeat; background-attachment:fixed; position:relative}
 /*store*/
-#contents .store-catering .store {position:absolute; top:-50px; left:50%; margin-left:-454px; width:280px; height:380px; padding-left:100px; border-radius:50%; background:url(../images/store-bg.png) no-repeat}
+#contents .store-catering .store {position:absolute; top:-50px; left:50%; margin-left:-454px; width:280px; height:380px; padding-left:100px; border-radius:50%; background:url(../images/store-bg.png) no-repeat; display:none; transform:rotateY(180deg); transition:transform 1s}
+#contents .store-catering .store.on {display:block; transform:rotateY(360deg); perspective:190px}
 #contents .store-catering .store .title-set {margin-top:75px}
 #contents .store-catering .store .title-set .sub-title {font-size:24px; color:#bf862a;}
 #contents .store-catering .store .title-set .title {font-size:16px; color:#fff; margin-left:30px}
@@ -158,7 +174,8 @@ contents
 #contents .store-catering .store .more {display:block; margin-top:40px; padding-left:73px; font-size:12px; color:#fff;  font-weight:bold; position:relative}
 #contents .store-catering .store .more:before {content:''; width:60px; height:1px; background:#fff; position:absolute; left:0; top:9px}
 /*catering*/
-#contents .store-catering .catering {position:absolute; bottom:-50px; left:50%; margin-left:-30px; width:215px; height:380px; padding-left:165px; border-radius:50%; background:#f9f4ec}
+#contents .store-catering .catering {position:absolute; bottom:-50px; left:50%; margin-left:-30px; width:215px; height:380px; padding-left:165px; border-radius:50%; background:#f9f4ec; display:none; transform:rotateY(180deg); transition:transform 1s}
+#contents .store-catering .catering.on {display:block; transform:rotateY(360deg); perspective:190px}
 #contents .store-catering .catering:before {content:''; width:135px; height:129px; background:url(../images/catering.jpg) no-repeat; position:absolute; top:145px; left:20px}
 #contents .store-catering .catering .title-set {margin-top:107px}
 #contents .store-catering .catering .title-set .sub-title {font-size:24px; color:#bf862a; margin-left:-30px}
@@ -203,7 +220,8 @@ footer
 #footer .left-area .btn .family-site {clear:both; position:relative}
 #footer .left-area .btn .family-site button {width:140px; height:30px; border:1px solid #b9b3b2; border-radius:3px; color:#000; font-size:11px; background:none; text-align:inherit; padding-left:16px; position:relative; cursor:pointer}
 #footer .left-area .btn .family-site button:after {content:''; width:9px; height:5px; background:url(../images/icons/arrow-bottom-f.jpg) no-repeat; position:absolute; right:10px; top:11px}
-#footer .left-area .btn .family-site ul {position:absolute; left:0; top:-245px; background:#eee; border:1px solid #b9b3b2; border-radius:3px; padding:5px 0}
+#footer .left-area .btn .family-site button.on:after {background:url(../images/icons/arrow-bottom-f2.jpg) no-repeat}
+#footer .left-area .btn .family-site ul {position:absolute; left:0; top:-245px; background:#eee; border:1px solid #b9b3b2; border-radius:3px; padding:5px 0; display:none}
 #footer .left-area .btn .family-site ul li a {display:block; width:122px; padding:5px 0 5px 16px; font-size:11px}
 #footer .left-area .btn .family-site ul li a:hover {background:#ddd}
 #footer .right-area {float:right}
