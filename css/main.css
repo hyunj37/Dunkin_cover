@@ -128,7 +128,7 @@ contents
 #contents .new-event .event-list .elist ul li {position:relative}
 #contents .new-event .event-list .elist ul li a img {width:100%}
 #contents .new-event .event-list .elist ul li a .event-info1 {height:72px; padding:12px 0 0 22px}
-#contents .new-event .event-list .elist ul li a .event-info1 h5 {font-size:23px; color:#372317; width:185px; text-overflow:ellipsis; white-space: nowrap; overflow: hidden; letter-spacing:-2px; font-weight:600}
+#contents .new-event .event-list .elist ul li a .event-info1 h5 {font-size:23px; color:#372317; width:185px; text-overflow:ellipsis; white-space: nowrap; overflow: hidden; letter-spacing:-1px; font-weight:600}
 #contents .new-event .event-list .elist ul li a .event-info1 .date {font-size:13px; margin-top:6px}
 #contents .new-event .event-list .elist ul li a .event-info1 .place {position:absolute; bottom:107px; right:20px}
 #contents .new-event .event-list .elist ul li a .event-info2 {border-top:1px solid #d1cccb; padding:22px 22px 0; font-size:17px; letter-spacing:-2px}
