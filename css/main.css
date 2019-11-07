@@ -197,7 +197,7 @@ contents
 #contents .sns .sns-list ul li.sns3 a {background-position:0 -132px}
 #contents .sns .sns-list ul li.sns4 a {background-position:0 -198px}
 #contents .sns .sns-list ul li.sns5 a {background-position:0 -264px}
-#contents .sns .sns-contents {margin-top:50px; width:2080px; height:230px; position:relative}/*width삭제하기*/
+#contents .sns .sns-contents {margin-top:50px; height:230px; position:relative}
 #contents .sns .sns-contents .sns-cont-box {position:absolute; left:0}
 #contents .sns .sns-contents .sns-cont-box li {float:left}
 

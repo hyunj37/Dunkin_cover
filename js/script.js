@@ -52,4 +52,23 @@ $(window).on("scroll", function(){
     }
 });
 
+/*마우스 효과*/
+var contnum = $('.sns-cont-box li').length;
+var contwid = $('.sns-cont-box li').width()*contnum;
+$('.sns-cont-box').css('width', contwid);
+
+$(".sns-contents").on("mousemove",function(e){
+    var posX = e.pageX;
+    var winwid = $(window).width();
+    if(winwid<=contwid){
+        if(winwid>=1280){
+            var gapwid = contwid-winwid;
+            var ratio = gapwid/winwid;
+        }else{
+            var gapwid = contwid-1280;
+            var ratio = gapwid/1280;
+        }
+        $('.sns-cont-box').css('left', -ratio*posX);
+    }
+});
 
