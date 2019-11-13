@@ -3,7 +3,7 @@
 /**********
 skip nav
 **********/
-#skip {position:relative}
+#skip {position:relative; z-index:1001}
 #skip a {position:absolute; width:130px; left:0; top:-40px; border:1px solid #fff; color:#fff; background:#333; line-height:30px; text-align:center}
 #skip a:active, 
 #skip a:focus {top:0}
@@ -11,8 +11,8 @@ skip nav
 /**********
 전체 레이아웃
 **********/
-body {padding-top:186px}
-.wrapper {width:100%; min-width:1280px; overflow:hidden}
+body {}
+.wrapper {padding-top:186px; width:100%; min-width:1280px; overflow:hidden}
 .container {width:1224px; padding:0 28px; margin:0 auto}/*1280기준*/
 
 /**********
